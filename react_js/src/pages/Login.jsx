@@ -17,7 +17,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/login', user);
+      const res = await axios.post('http://localhost:5001/login', user);
    
   
       if (res.status === 200) {

@@ -10,7 +10,7 @@ app.use(express.json())
 dotenv.config()
 const PORT = process.env.PORT || 5000
 app.use("/",router)
-app.use("/product",virfytoken,(req,res)=>{
+app.use("/items",virfytoken,(req,res)=>{
     res.status(200).json({
         message:"Access granted to processd route",
         pro:"hello",

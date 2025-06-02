@@ -18,7 +18,7 @@ const neviget = useNavigate()
     const handleSubmit = async(e)=>{
   e.preventDefault()
   try {
-   const res =  await axios.post("http://localhost:5000/register",user)
+   const res =  await axios.post("http://localhost:5001/register",user)
    if(res.status === 201){
     alert("this form created succesfully")
    neviget("/login")

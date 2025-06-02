@@ -7,7 +7,7 @@ dotenv.config();
 export const virfytoken = (req,res,next)=>{
 const token = req.header("authorization")
 
-console.log(token)
+
 if(!token) return res.status(401).json({massage:"Unauthorized: no token provide "})
     try {
       const decoded = jwt.verify(token,process.env.JWT_SECRET) 
