@@ -39,8 +39,8 @@ const Cart = ({image,reviews,rating,originalPrice,price,title,id}) => {
         <h1 className="text-lg font-semibold text-gray-800 mb-2">{title.slice(0,15)}...</h1>
 
         <div className="flex items-center gap-2">
-          <h2 className="text-red-500 font-bold text-lg">{`$${price}`}</h2>
-          <h2 className="text-gray-500 line-through">{`$${originalPrice}`}</h2>
+          <h2 className="text-red-500 font-bold text-lg">{`₹${price}`}</h2>
+          <h2 className="text-gray-500 line-through">{`₹${originalPrice}`}</h2>
         </div>
        <Rating
        rating = {rating}

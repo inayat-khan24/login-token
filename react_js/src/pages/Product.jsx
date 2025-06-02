@@ -117,9 +117,9 @@ console.log(productItems)
   }, []);
 
   return (
-    <div className='min-h-screen p-8 flex justify-between bg-[#d8adb4]'>
+    <div className='min-h-screen p-8 flex max-sm:flex-col max-sm:justify-normal   justify-between bg-[#d8adb4]'>
 {/* // section one */}
-<div className='w-[70%] flex flex-wrap gap-4 max-h-95 mr-4 overflow-auto'>
+<div className='w-[70%] max-sm:w-[100%] flex flex-wrap gap-4 max-sm:max-h-140 max-h-95 mr-4 max-sm:ml-6 overflow-auto'>
 {
 productItems.map(({image,reviews,rating,originalPrice,price,title,_id},index)=>{
 return <Cart
@@ -142,7 +142,7 @@ reviews = {reviews}
 
     {/* // section two  */}
 <div 
-    className='container w-[30%] max-h-[500px] flex flex-col p-2 rounded-2xl items-center justify-center min-w-sm bg-[skyblue] '>
+    className='container w-[30%] max-sm:min-w-[100%]  max-sm:mt-15 max-h-[500px] flex flex-col p-2 rounded-2xl items-center justify-center min-w-sm bg-[skyblue] '>
      <h2 className='mb-4 font-bold'>Dash Board</h2>
    
      <form action="" onSubmit={handleSubmit}  className='px-4'>
