@@ -19,9 +19,7 @@ app.use("/items",virfytoken,(req,res)=>{
     })
 })
 
-app.get("/",(req,res)=>{
-    res.send("hello")
-})
+/
 
 app.listen(PORT,()=>{
 console.log(`running surver at ${PORT}`)

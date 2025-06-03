@@ -39,3 +39,8 @@ const token = jwt.sign({id:user._id,email:user.email},process.env.JWT_SECRET,{ex
     console.log(error)
     return res.status(500).json("internal server error")
 }}
+
+export const getdata= async(req,res)=>{
+   const get = await loginModel.find()
+   res.status(200).json(get)
+}
